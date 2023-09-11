@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hobbies-icon {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.secondline {
+    margin-left: 11%;
+    width: 77%;
+    margin-right: 11%;
+}
+
+.detail-and-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.detail {
+    flex: 1;
+    max-width: 100%;
+}
+
+.img-sec {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.img-w {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Nav */
+
+section {
+    margin: 2rem 8.5rem;
+}
+
+.images {
+    background-repeat: no-repeat;
+    background-position: 0 -75px;
+    -webkit-box-shadow: 0 10px 10px -10px #000000;
+    -moz-box-shadow: 0 10px 10px -10px #000000;
+    box-shadow: 0px 16px 4px -10px #82c8f1;
+    width: 528px;
+    background-size: cover;
+    border-radius: 50%;
+    width: 50%;
+}
+
+#face {
+    border-radius: 50%;
+    width: 90%;
+}
+
+@media only screen and (max-width: 480px) {
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #244D61;
+    }
+
+    header {
+        padding: 0.7rem 1rem;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    nav {
+        position: absolute;
+        display: grid;
+        top: 75px;
+        text-align: center;
+        background-color: #1F252E;
+        left: -100%;
+        z-index: 1;
+        width: 100%;
+    }
+
+    #click:checked~nav {
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+
+    section {
+        margin: 1rem 1.5rem;
+    }
+}
