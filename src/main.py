@@ -25,6 +25,12 @@ async def home():
         content = f.read()
     return HTMLResponse(content=content)
 
+@app.get('/paint')
+async def home():
+    with open('web/paint.html', 'r') as f:
+        content = f.read()
+    return HTMLResponse(content=content)
+
 @app.get('/monster')
 async def home():
     with open('web/monster.html', 'r') as f:
