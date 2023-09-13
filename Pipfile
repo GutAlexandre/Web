@@ -26,7 +26,7 @@ phonetics = "1.0.5"
  
 [scripts]
 terminal = "python terminal.py" 
-localhost = "uvicorn main:app --host 0.0.0.0 --port 9091 --reload"
+localhost = "python -m uvicorn main:app --host 0.0.0.0 --port 9091 --reload"
 
 [dev-packages]
 autopep8 = "2.0.2"
